@@ -1,0 +1,108 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="master.master.cs" Inherits="software.master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="x-icon" href="Imagenes/logo.png" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <header class="header">
+    <img src="Imagenes/Logo.png" />
+    <a href="paginainicio.aspx" class="logo">AUTOBOTS</a>
+
+    <nav class="navbar">
+        <a href="paginainicio.aspx">Inicio</a>
+        <a href="#">Disponibles</a>
+        <a href="catalogo.aspx">Catalogo</a>
+        <a href="#">compras</a>
+        <a href="#"></a>
+    </nav>
+    </header>
+           <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial;
+    }
+
+    body 
+    {
+        background-image: url("Imagenes/fon1.png");
+        background-color: lightblue;
+        background-size: cover;
+        background-position: center;
+        height: 150vh;
+    }
+
+    .header 
+    {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 15px 60px;
+        background: blue;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 100;
+    }
+
+    .logo 
+    {
+        font-size: 40px;
+        color: black;
+        text-decoration: none;
+        font-weight: 700;
+        margin-right: 32%;
+    }
+
+    .navbar a 
+    {
+        position: relative;
+        font-size: 20px;
+        color: white;
+        font-weight: 500;
+        text-decoration: none;
+        margin-left: 40px;
+    }
+
+    .navbar a::before 
+    {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: black;
+        transition: .3s;
+    }
+
+    .navbar a:hover::before 
+    {
+            width: 100%;
+    }
+    header img
+    {
+        height: 50px;
+        width: 50px;
+        border-radius: .5rem;
+    }
+
+</style>
+</body>
+</html>

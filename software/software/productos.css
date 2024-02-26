@@ -1,0 +1,84 @@
+﻿
+.image {
+    margin-left: 200px;
+    margin-top: 14%;
+}
+
+    .image img {
+        border-radius: 1rem;
+        width: 300px;
+    }
+
+.info {
+    margin-left: 550px;
+    margin-top: -33%;
+}
+
+    .info h2 {
+        font-size: 2rem;
+        line-height: -.5rem;
+        color:whitesmoke
+    }
+
+    .info p {
+        font-family: Calibri;
+        color: whitesmoke
+    }
+
+.precio {
+    color: yellow;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.explica {
+    font-size: 20px;
+    backdrop-filter: blur(20px);
+    padding: 30px 40px;
+    border-radius: 10px;
+    border: 2px solid #333;
+    margin-right: 40px;
+    color:whitesmoke
+}
+
+select {
+    font-size: 15px;
+}
+
+.btn-box button {
+    font-size: 18px;
+    padding: 8px 25px;
+    border-radius: 1rem;
+    border: 2px solid yellow;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+}
+
+    .btn-box button:hover {
+        font-weight: lighter;
+        background-color: yellow;
+        transition: .3s;
+    }
+
+.btn-catalogo {
+    width: 200px;
+    padding: 10px 50px;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid yellow;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    line-height: 170px;
+}
+
+    .btn-catalogo:hover {
+        font-weight: lighter;
+        background-color: yellow;
+        transition: .3s;
+    }
